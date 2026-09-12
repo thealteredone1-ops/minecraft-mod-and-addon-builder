@@ -1,0 +1,202 @@
+{
+  "theme": {
+    "default": "dark",
+    "description": "Obsidian Minecraft Creator Studio — deep matte obsidian surfaces (#0e1117 / #161b22) paired with vibrant Redstone/Emerald/Lapis Minecraft glow accents (#10b981 emerald, #38bdf8 lapis diamond, #f59e0b gold ore, #ef4444 redstone) and crisp isometric grid lines."
+  },
+  "typography": {
+    "font_family_heading": "Space Grotesk Variable, sans-serif",
+    "font_family_body": "DM Sans Variable, sans-serif",
+    "font_family_mono": "JetBrains Mono Variable, monospace",
+    "css_import": "@import \"@fontsource-variable/space-grotesk\";\n@import \"@fontsource-variable/dm-sans\";\n@import \"@fontsource-variable/jetbrains-mono\";",
+    "scale_px": {
+      "display": 56,
+      "h1": 44,
+      "h2": 32,
+      "h3": 22,
+      "h4": 18,
+      "body": 16,
+      "caption": 14
+    },
+    "rules": {
+      "headings": "Space Grotesk, font-bold or font-extrabold, tracking-tight, uppercase overlines in JetBrains Mono tracking-[0.2em]",
+      "body": "DM Sans, font-normal leading-relaxed, text-slate-300 on dark",
+      "code_and_keys": "JetBrains Mono for identifier IDs (e.g. `custom:ruby_sword`, `minecraft:iron_ingot`), JSON payloads, recipe grids and code preview",
+      "prohibitions": "Never use Inter for headings. Never exceed text-6xl for desktop hero titles."
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#0B0E14",
+        "on_bg": "#F1F5F9",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "link": "#38BDF8",
+          "error": "#F87171",
+          "success": "#34D399",
+          "warning": "#FBBF24"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#121824",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "link": "#38BDF8",
+          "error": "#F87171",
+          "success": "#34D399"
+        }
+      },
+      {
+        "name": "card",
+        "kind": "solid",
+        "bg": "#1A2234",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#A0ABC0",
+        "roles": {
+          "link": "#60A5FA",
+          "error": "#F87171",
+          "success": "#34D399"
+        }
+      },
+      {
+        "name": "crafting_slot",
+        "kind": "solid",
+        "bg": "#090D16",
+        "on_bg": "#E2E8F0",
+        "on_bg_muted": "#64748B"
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0B0E14",
+        "on_bg_muted": "#475569"
+      },
+      {
+        "name": "hero",
+        "kind": "image",
+        "contrast_against": "#080B10",
+        "guarantee": "scrim: linear-gradient(to bottom, rgba(11, 14, 20, 0.85) 0%, rgba(11, 14, 20, 0.95) 100%) with 1px isometric grid backdrop",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "link": "#38BDF8",
+          "error": "#F87171",
+          "success": "#34D399"
+        }
+      },
+      {
+        "name": "badge_emerald",
+        "kind": "solid",
+        "bg": "#064E3B",
+        "on_bg": "#A7F3D0",
+        "on_bg_muted": "#6EE7B7"
+      },
+      {
+        "name": "badge_diamond",
+        "kind": "solid",
+        "bg": "#0C4A6E",
+        "on_bg": "#BAE6FD",
+        "on_bg_muted": "#7DD3FC"
+      },
+      {
+        "name": "badge_redstone",
+        "kind": "solid",
+        "bg": "#7F1D1D",
+        "on_bg": "#FECACA",
+        "on_bg_muted": "#FCA5A5"
+      },
+      {
+        "name": "badge_gold",
+        "kind": "solid",
+        "bg": "#78350F",
+        "on_bg": "#FEF3C7",
+        "on_bg_muted": "#FDE68A"
+      }
+    ],
+    "accent": "#10B981",
+    "on_accent": "#022C22",
+    "accent_secondary": "#0284C7",
+    "on_accent_secondary": "#F0F9FF",
+    "accent_amber": "#D97706",
+    "on_accent_amber": "#451A03",
+    "border_subtle": "#1E293B",
+    "border_highlight": "#334155"
+  },
+  "entry_surfaces": {
+    "/": "split hero — brand value + generator prompt left, live visual 3x3 crafting grid & element showcase right",
+    "/login": "branded split auth — Minecraft Studio preview & feature highlights left, email/password form card right",
+    "/register": "branded split auth — modding community tier benefits left, account creation form right",
+    "/dashboard": "workspace command center — active mod projects grid, quick AI prompt generator, quota meter & export trigger",
+    "/projects/:id": "studio IDE layout — left sidebar category navigator (Items, Blocks, Mobs, Recipes, Armor/Tools, Ores), center canvas editor with live preview, right inspector & code preview",
+    "/pricing": "tier matrix — Free vs Creator Pro vs Studio 18+ Modder with Stripe checkout triggers and feature breakdown"
+  },
+  "image_urls": [
+    {
+      "category": "hero_backdrop",
+      "url": "https://images.unsplash.com/photo-1760114333208-a6d658f14a30?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHwxfHxkYXJrJTIwZ2FtaW5nJTIwY3JlYXRvciUyMHdvcmtzcGFjZXxlbnwwfHx8fDE3ODkxODcyNjF8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Dark gaming voxel & Minecraft aesthetic moody studio glow backdrop for hero and auth visual panel"
+    },
+    {
+      "category": "mod_landscape_preview",
+      "url": "https://images.unsplash.com/photo-1785920268390-b91cf87c9bfd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHw0fHxwaXhlbCUyMGFydCUyMGdhbWUlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzg5MTg3MjYyfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract pixel terrain & ore biome preview illustration for world generation ore editor"
+    }
+  ],
+  "layout_and_grids": {
+    "system": "Studio Workspace & Bento Protocol",
+    "header": "Crystal glass sticky bar (backdrop-blur-xl bg-[#0B0E14]/85 border-b border-slate-800/80 px-6 py-4 z-50) with Brand Logo, Forge/Bedrock target badges, Quota Meter pill, Nav links, Pro upgrade button, and User Profile menu",
+    "dashboard_grid": "Tetris Bento: col-span-1 md:col-span-12 gap-6 with Featured AI Generator banner (col-span-12), Project Cards (col-span-12 md:col-span-6 lg:col-span-4), Quota & Export Activity Widget (col-span-12 md:col-span-4)",
+    "studio_editor_layout": "3-column IDE: Left tree navigator (260px fixed width), Center editor canvas (flex-1 scrollable with custom 3x3 crafting matrix, mob attribute sliders, texture picker, loot tables), Right inspector (340px tabbed Forge Java code / Bedrock JSON manifest & instant download preview)",
+    "mobile_rules": "Left navigator collapses into a mobile slide-out Sheet, right inspector stacks below editor, responsive padding max p-4 on mobile and p-8 on desktop"
+  },
+  "component_styling_direction": {
+    "buttons": "Pill & Chamfered edges with subtle 1px border. Primary CTA: emerald glow `bg-emerald-500 hover:bg-emerald-400 text-emerald-950 font-semibold shadow-[0_0_15px_rgba(16,185,129,0.3)]`. Secondary: `bg-slate-800/80 hover:bg-slate-700 text-slate-100 border border-slate-700`. Action destructive: `bg-red-500/10 text-red-400 hover:bg-red-500/20 border border-red-500/30`.",
+    "crafting_grid": "3x3 slot matrix styled with sunken inset borders (`shadow-inner bg-[#090D16] border-2 border-[#1E293B] rounded-lg w-14 h-14 flex items-center justify-center hover:border-emerald-500/60 transition-colors cursor-pointer`). Arrow indicator to output slot with enchanted shimmer effect.",
+    "item_block_cards": "Dark obsidian slate (`bg-[#121824] border border-[#1E293B] rounded-xl p-5 hover:border-emerald-500/40 hover:shadow-[0_4px_20px_rgba(0,0,0,0.5)] transition-all`) with voxel icon preview, identifier tag pill, Java/Bedrock compatibility pills.",
+    "ai_prompt_bar": "Command-bar style container (`bg-[#161F30] border-2 border-emerald-500/30 focus-within:border-emerald-400 p-2 rounded-2xl shadow-[0_0_30px_rgba(16,185,129,0.15)]`) with preset suggestion chips (`'Mythic Boss & Nether Dagger'`, `'Cosmic Ore with Laser Pickaxe'`, `'Custom Redstone Golem Mob'`, `'Obsidian Armor Set with Speed Buff'`).",
+    "code_preview_panel": "JetBrains Mono tabbed viewer with syntax highlighting emulation for Forge `ModItems.java`, `ModBlocks.java`, `ItemModelGenerator.java` and Bedrock `manifest.json`, `items/ruby_sword.json` with one-click 'Copy' and 'Export .zip / .mcpack' buttons."
+  },
+  "motion_and_interactions": {
+    "engine": "motion (from motion/react)",
+    "micro_interactions": [
+      "Hover lift on project cards: translateY(-3px) with subtle emerald border bleed",
+      "Crafting slot item placement: scale pop spring (scale: [0.85, 1.05, 1])",
+      "AI Generating pulse: glowing border sweep along the prompt container",
+      "Export download trigger: simulated compilation progress bar with Java/Bedrock pack bundling steps followed by instant file download trigger"
+    ],
+    "reduced_motion": "Wrap animations with `prefers-reduced-motion` compliance or standard opacity fades without transforms."
+  },
+  "export_and_bundling_specs": {
+    "java_mod": {
+      "target_loaders": ["Forge 1.20.4", "Fabric 1.20.4", "NeoForge 1.20.4"],
+      "bundle_format": ".zip containing standard gradle/src directory layout, modid, assets, data, and Java classes ready for gradlew build"
+    },
+    "bedrock_addon": {
+      "target_versions": ["1.20+ Bedrock Engine"],
+      "bundle_format": ".mcpack / .mcaddon with valid UUIDs in manifest.json, behavior pack (BP), and resource pack (RP) textures & geometry"
+    }
+  },
+  "accessibility": {
+    "wcag_compliance": "WCAG AA (minimum 4.5:1 contrast for all normal text, 3:1 for large badges)",
+    "focus_states": "focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:outline-none",
+    "aria_labels": "All visual crafting slots, icon selectors, and icon-only download triggers require clear `aria-label` or tooltips"
+  },
+  "instructions_to_main_agent": [
+    "Use dark mode as primary default by ensuring the <html> tag in `frontend/index.html` has `class=\"dark\"`.",
+    "Add `@import \"@fontsource-variable/space-grotesk\";` and `@import \"@fontsource-variable/dm-sans\";` and `@import \"@fontsource-variable/jetbrains-mono\";` in `frontend/src/index.css`.",
+    "Set `--font-heading: 'Space Grotesk Variable', sans-serif;` and `--font-sans: 'DM Sans Variable', sans-serif;` and `--font-mono: 'JetBrains Mono Variable', monospace;` in `@theme inline`.",
+    "Implement the 6 Core Mod Element Editors with rich custom UI controls: 1) Items & Weapons (damage, attack speed, durability, special effects), 2) Blocks & Ores (hardness, blast resistance, light emission, drop rules, world gen veins), 3) Mobs/Entities (health, speed, hostile/passive, custom sound/loot, AI behavior goals), 4) Armor & Tool Sets (helmet, chestplate, leggings, boots, pickaxe, axe, shovel, sword, hoe with armor toughness and set bonus), 5) Custom Crafting & Smelting Recipes (interactive 3x3 drag/click crafting table matrix and furnace smelter), 6) Creative Tab customizer.",
+    "Build the AI Mod Prompt Assistant with interactive generation templates that automatically construct all 6 elements when user types a prompt (e.g. 'A Frostburn Dimension mod with Cryo-Ores, Glacial Armor, and Ice Drake Mob').",
+    "Support dual export engine: Generate actual downloadable Forge/Fabric source `.zip` and Bedrock `.mcpack` files containing valid directory structures, Java classes, and Bedrock JSON schemas.",
+    "Include User Auth with email/password login/register session cookies (`/api/auth/*`) allowing users to save and edit their mod libraries in MongoDB.",
+    "Provide Tiered Quotas & Pricing page with Creator Pro / Studio 18+ plan subscription options via simulated Stripe checkout + mock upgrade flow.",
+    "Every button, input, tab, crafting slot, and project card MUST have explicit `data-testid` attributes (e.g. `data-testid=\"create-mod-button\"`, `data-testid=\"crafting-slot-0\"`, `data-testid=\"export-java-zip\"`, `data-testid=\"export-bedrock-mcpack\"`).",
+    "All components should be strictly typed TypeScript (`.tsx`) and use preinstalled shadcn/ui components (`@/components/ui/...`) with sonner toasts for actions."
+  ]
+}
