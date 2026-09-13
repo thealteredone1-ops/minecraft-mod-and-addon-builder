@@ -192,4 +192,4 @@ local-run instructions above.
 - Both dev servers hot-reload on file edits (uvicorn `--reload` for the backend,
   Vite HMR for the frontend); no rebuild step needed for normal iteration. A
   restart is still needed after changing `.env`, `requirements.txt`, or
-  `vite.config.ts`.
+  `vite.config.ts`
