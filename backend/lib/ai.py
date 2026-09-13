@@ -6,8 +6,6 @@ import os
 import re
 import uuid
 
-from emergentintegrations.llm.chat import LlmChat, UserMessage
-
 from models.schemas import ModSpec
 
 SYSTEM = """You are a senior Minecraft mod engineer. You design mods that work on BOTH
